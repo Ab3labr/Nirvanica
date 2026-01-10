@@ -1,0 +1,82 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Lush green landscape of Wayanad with mountains in the background",
+      "imageUrl": "https://images.unsplash.com/photo-1619408506848-0122e6a8af04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fHx8MTc2NzQ5NTAxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landscape nature"
+    },
+    {
+      "id": "about-resort",
+      "description": "An elegant, modern resort building nestled in nature",
+      "imageUrl": "https://images.unsplash.com/photo-1698115295471-6dc1980279b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmUlMjByZXNvcnR8ZW58MHx8fHwxNzY3NTI2OTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architecture resort"
+    },
+    {
+      "id": "exp-nature-walk",
+      "description": "A person walking on a trail through a dense forest",
+      "imageUrl": "https://images.unsplash.com/photo-1668044143825-ee9f0e534cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb3Jlc3QlMjB0cmFpbHxlbnwwfHx8fDE3Njc1MDc4OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "forest trail"
+    },
+    {
+      "id": "exp-spa",
+      "description": "A serene spa room with massage beds and calming decor",
+      "imageUrl": "https://images.unsplash.com/photo-1650044252595-cacd425982ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzcGElMjB3ZWxsbmVzc3xlbnwwfHx8fDE3Njc1MDAyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spa wellness"
+    },
+    {
+      "id": "exp-culture",
+      "description": "Local artisans performing a traditional dance",
+      "imageUrl": "https://images.unsplash.com/photo-1581296293900-b9b0b6fdaf08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjdWx0dXJlJTIwZGFuY2V8ZW58MHx8fHwxNzY3NTI2OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "culture dance"
+    },
+    {
+      "id": "exp-dining-exp",
+      "description": "A chef preparing a gourmet dish in a modern kitchen",
+      "imageUrl": "https://images.unsplash.com/photo-1630445396366-8dea03c85ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGVmJTIwZm9vZHxlbnwwfHx8fDE3Njc1MjY5NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chef food"
+    },
+    {
+      "id": "dining-main",
+      "description": "Interior of a luxury restaurant with a view of the forest",
+      "imageUrl": "https://i.ibb.co/5hRyJqfb/IMG-20251016-WA0008.jpg",
+      "imageHint": "restaurant interior"
+    },
+    {
+      "id": "gallery-1",
+      "description": "A swimming pool overlooking a valley",
+      "imageUrl": "https://images.unsplash.com/photo-1729605412082-8265cb323a75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb29sJTIwdmlld3xlbnwwfHx8fDE3Njc1MjY5NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pool view"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A luxurious suite with a balcony and nature view",
+      "imageUrl": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3RlbCUyMHJvb218ZW58MHx8fHwxNzY3NTA4MzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel room"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A misty morning view from the resort",
+      "imageUrl": "https://images.unsplash.com/photo-1603245833665-f1dc15745129?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtaXN0eSUyMG1vcm5pbmd8ZW58MHx8fHwxNzY3NTI2OTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "misty morning"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Close up of exotic flowers in the resort garden",
+      "imageUrl": "https://images.unsplash.com/photo-1534710961216-75c88202f43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zmxvd2VyJTIwZ2FyZGVufGVufDB8fHx8MTc2NzQyOTEzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flower garden"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A couple enjoying a candle-lit dinner",
+      "imageUrl": "https://images.unsplash.com/photo-1548428938-b1063c60f386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb21hbnRpYyUyMGRpbm5lcnxlbnwwfHx8fDE3Njc1MjY5NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "romantic dinner"
+    },
+    {
+      "id": "gallery-6",
+      "description": "An aerial view of the resort property",
+      "imageUrl": "https://images.unsplash.com/photo-1688949078626-a358f500e063?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXJpYWwlMjByZXNvcnR8ZW58MHx8fHwxNzY3NTI2OTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aerial resort"
+    }
+  ]
+}
