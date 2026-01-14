@@ -1,32 +1,48 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
+const heroImages = PlaceHolderImages.filter(p => p.id.startsWith('hero-slide-'));
 
 export default function Hero() {
-  const heroImage = PlaceHolderImages.find((p) => p.id === "hero-background");
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 5000); // Change image every 5 seconds
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <section className="relative h-screen w-full flex items-center justify-center text-center text-white">
-      {heroImage && (
+    <section className="relative h-screen w-full flex items-center justify-center text-center text-white overflow-hidden">
+      {heroImages.map((image, index) => (
         <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
+          key={image.id}
+          src={image.imageUrl}
+          alt={image.description}
           fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
+          className={cn(
+            "object-cover transition-opacity duration-1000 ease-in-out",
+            index === currentImageIndex ? "opacity-100" : "opacity-0"
+          )}
+          priority={index === 0}
+          data-ai-hint={image.imageHint}
         />
-      )}
+      ))}
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full pt-20">
         <div className="flex flex-col items-center space-y-6 px-4">
           <h1
             className={cn(
               "text-5xl md:text-7xl font-bold tracking-tight text-shadow-lg",
-              "font-vogue"
+              "font-headline"
             )}
           >
             Nirvanica Retreat
@@ -35,7 +51,7 @@ export default function Hero() {
             Discover the perfect harmony of nature and comfort at Nirvanica — an
             escape into the lush landscapes of Wayanad.
           </p>
-          <div className="pt-12">
+          <div className="pt-20">
             <Button
               asChild
               size="lg"

@@ -45,38 +45,68 @@
     {
       "id": "gallery-1",
       "description": "A swimming pool overlooking a valley",
-      "imageUrl": "https://images.unsplash.com/photo-1729605412082-8265cb323a75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb29sJTIwdmlld3xlbnwwfHx8fDE3Njc1MjY5NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/XkMGMMgm/IMG-20251016-WA0009.jpg",
       "imageHint": "pool view"
     },
     {
       "id": "gallery-2",
       "description": "A luxurious suite with a balcony and nature view",
-      "imageUrl": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3RlbCUyMHJvb218ZW58MHx8fHwxNzY3NTA4MzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/hFHKNChM/IMG-20251016-WA0007.jpg",
       "imageHint": "hotel room"
     },
     {
       "id": "gallery-3",
       "description": "A misty morning view from the resort",
-      "imageUrl": "https://images.unsplash.com/photo-1603245833665-f1dc15745129?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtaXN0eSUyMG1vcm5pbmd8ZW58MHx8fHwxNzY3NTI2OTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/pvgWQ7fg/IMG-20251016-WA0002.jpg",
       "imageHint": "misty morning"
     },
     {
       "id": "gallery-4",
-      "description": "Close up of exotic flowers in the resort garden",
-      "imageUrl": "https://images.unsplash.com/photo-1534710961216-75c88202f43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zmxvd2VyJTIwZ2FyZGVufGVufDB8fHx8MTc2NzQyOTEzNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "flower garden"
+      "description": "A couple enjoying a candle-lit dinner",
+      "imageUrl": "https://i.ibb.co/cXvwF2bC/Whats-App-Image-2025-10-13-at-23-10-17-015f752d.jpg",
+      "imageHint": "romantic dinner"
     },
     {
       "id": "gallery-5",
-      "description": "A couple enjoying a candle-lit dinner",
-      "imageUrl": "https://images.unsplash.com/photo-1548428938-b1063c60f386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb21hbnRpYyUyMGRpbm5lcnxlbnwwfHx8fDE3Njc1MjY5NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "romantic dinner"
+      "description": "Close up of garden",
+      "imageUrl": "https://i.ibb.co/FQsPzH2/Whats-App-Image-2025-10-13-at-23-10-14-8fefa716.jpg",
+      "imageHint": "flower garden"
     },
     {
       "id": "gallery-6",
       "description": "An aerial view of the resort property",
-      "imageUrl": "https://images.unsplash.com/photo-1688949078626-a358f500e063?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXJpYWwlMjByZXNvcnR8ZW58MHx8fHwxNzY3NTI2OTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/NgFnw8QC/IMG-20251016-WA0003.jpg",
       "imageHint": "aerial resort"
+    },
+    {
+      "id": "hero-slide-1",
+      "description": "Breathtaking Hill Stations Around Wayanad",
+      "imageUrl": "https://i.ibb.co/rK7XwdkT/10-Breathtaking-Hill-Stations-Around-Wayanad-1.jpg",
+      "imageHint": "Wayanad landscape"
+    },
+    {
+      "id": "hero-slide-2",
+      "description": "A serene lake in Wayanad surrounded by lush green hills",
+      "imageUrl": "https://i.ibb.co/GQRF9n5X/Group-11.png",
+      "imageHint": "Wayanad serene lake"
+    },
+    {
+      "id": "hero-slide-3",
+      "description": "Lush greenery and landscapes of Wayanad",
+      "imageUrl": "https://i.ibb.co/zHJP4Lfp/image-12.jpg",
+      "imageHint": "Wayanad greenery"
+    },
+    {
+      "id": "hero-slide-4",
+      "description": "A beautiful view of a waterbody in Wayanad",
+      "imageUrl": "https://i.ibb.co/KpwfhTXv/firosnv-photography-fu-Esz-HF4uf-A-unsplash.jpg",
+      "imageHint": "Wayanad waterbody"
+    },
+    {
+      "id": "hero-slide-5",
+      "description": "A stunning view of the mountains in Wayanad",
+      "imageUrl": "https://i.ibb.co/zV29fH8F/Untitled-7.jpg",
+      "imageHint": "Wayanad mountains"
     }
   ]
 }

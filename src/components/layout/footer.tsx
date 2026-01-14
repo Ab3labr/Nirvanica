@@ -1,8 +1,7 @@
+
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Instagram, Facebook } from "lucide-react";
 
 const exploreLinks = [
   { href: "#about", label: "About" },
@@ -38,13 +37,13 @@ export default function Footer() {
           {/* Contact & Address */}
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h3 className="font-bold font-headline text-lg">Address</h3>
+              <h3 className="font-headline text-xl">Address</h3>
               <p className="mt-4 text-primary-foreground/80">
               Banasura Dam , Kuttiyamvayal, Padinjarathara, Kerala 673575
               </p>
             </div>
             <div>
-              <h3 className="font-bold font-headline text-lg">Contact</h3>
+              <h3 className="font-headline text-xl">Contact</h3>
               <div className="mt-4 space-y-2 text-primary-foreground/80">
                 <p>Nirvanica.wayanad@gmail.com</p>
               </div>
@@ -53,7 +52,7 @@ export default function Footer() {
 
           {/* Links */}
           <div className="lg:col-span-2">
-            <h3 className="font-bold font-headline text-lg">Explore</h3>
+            <h3 className="font-headline text-xl">Explore</h3>
             <ul className="mt-4 space-y-3">
               {exploreLinks.map((link) => (
                 <li key={link.label}>
@@ -68,7 +67,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="lg:col-span-2">
-            <h3 className="font-bold font-headline text-lg">Legal</h3>
+            <h3 className="font-headline text-xl">Legal</h3>
             <ul className="mt-4 space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.label}>
@@ -83,31 +82,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Social Media */}
           <div className="lg:col-span-2">
-            <h3 className="font-bold font-headline text-lg">Newsletter</h3>
-            <form className="mt-4">
-              <div className="relative">
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60 focus:ring-primary-foreground"
-                />
-                <Button
-                  type="submit"
-                  size="icon"
-                  variant="ghost"
-                  className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8 hover:bg-primary-foreground/20"
-                >
-                  <ArrowRight className="h-4 w-4 text-primary-foreground" />
-                </Button>
-              </div>
-            </form>
+            <h3 className="font-headline text-xl">Stay connected</h3>
+            <div className="flex items-center space-x-4 mt-4">
+              <Link href="https://www.instagram.com/theofficial_nirvanica?igsh=MXNsajZqenE2emJjMg==" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-primary-foreground">
+                <Instagram className="h-6 w-6" strokeWidth={1.75} />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link href="https://www.facebook.com/share/17ES2FFxgk/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-primary-foreground">
+                <Facebook className="h-6 w-6" strokeWidth={1.75} />
+                <span className="sr-only">Facebook</span>
+              </Link>
+            </div>
           </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/20 text-center text-primary-foreground/60 text-sm">
-          <p>© 2026 Nirvanica Resorts. All Rights Reserved.</p>
+          <p>© 2026 Nirvanica Retreat. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

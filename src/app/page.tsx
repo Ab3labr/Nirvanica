@@ -3,9 +3,9 @@ import Footer from "@/components/layout/footer";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Experiences from "@/components/sections/experiences";
-import Dining from "@/components/sections/dining";
 import Gallery from "@/components/sections/gallery";
-import Contact from "@/components/sections/contact";
+import VideoSection from "@/components/sections/video-section";
+import Dining from "@/components/sections/dining";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <About />
+        <VideoSection />
         <Experiences />
         <Dining />
         <Gallery />

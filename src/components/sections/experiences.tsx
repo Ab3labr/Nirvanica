@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Animated } from "@/components/Animated";
 import Image from "next/image";
 import React from "react";
 
@@ -15,21 +15,21 @@ const experiences: Experience[] = [
     title: "Nature Treks",
     description:
       "Explore Wayanad's wild beauty on our guided treks. Discover hidden waterfalls and experience nature up close.",
-    imageUrl: "https://i.ibb.co/k6D7Sq3N/unnamed-2.png",
+    imageUrl: "https://i.ibb.co/wNjSQCMd/nature-treks.jpg",
     imageHint: "nature trek"
   },
   {
     title: "Serene Views",
     description:
       "From sunrise over the hills to sunset on Banasura Dam, the views here change with every hour.",
-    imageUrl: "https://images.unsplash.com/photo-1623302485960-d61687113a11?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1333",
+    imageUrl: "https://i.ibb.co/8g26RxD5/serene-views.jpg",
     imageHint: "serene view"
   },
   {
     title: "Campfire Evenings",
     description:
       "Gather for a memorable campfire under the stars, listening to the gentle sounds of nature.",
-    imageUrl: "https://i.ibb.co/3mFcyXz3/Group-4.png",
+    imageUrl: "https://i.ibb.co/fdhnKcGv/campfire-evenings.jpg",
     imageHint: "campfire evening"
   },
 ];
@@ -38,42 +38,42 @@ export default function Experiences() {
   return (
     <section id="experiences" className="py-24 sm:py-32 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-            Curated Experiences
+        <Animated className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-body text-primary">
+            Our curated <br />
+            <em className="font-headline">Experiences for You</em>
           </h2>
           <p className="mt-4 text-lg max-w-2xl mx-auto text-foreground/80">
             Immerse yourself in activities that connect you with nature and
             local culture.
           </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        </Animated>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {experiences.map((exp, index) => (
-            <Card
+            <Animated
               key={index}
-              className="bg-card text-card-foreground border-border/50 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col overflow-hidden"
+              delay={index * 150}
+              className="flex flex-col text-left"
             >
-              <div className="relative h-56 w-full">
+              <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src={exp.imageUrl}
                   alt={exp.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 hover:scale-105"
                   data-ai-hint={exp.imageHint}
                 />
               </div>
-              <CardContent className="text-center flex-grow flex flex-col justify-start p-6">
-                <CardTitle className="mb-2 text-xl font-headline">
+              <div className="mt-6">
+                <h3 className="text-2xl font-headline text-primary">
                   {exp.title}
-                </CardTitle>
-                <p className="text-muted-foreground">{exp.description}</p>
-              </CardContent>
-            </Card>
+                </h3>
+                <p className="mt-2 text-muted-foreground">{exp.description}</p>
+              </div>
+            </Animated>
           ))}
         </div>
       </div>
     </section>
   );
 }
-
-

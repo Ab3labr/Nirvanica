@@ -1,14 +1,14 @@
 
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { cn } from "@/lib/utils";
+import { Animated } from "@/components/Animated";
 
 export default function About() {
   return (
     <section id="about" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-            Welcome to Nirvanica.
+        <Animated className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-body text-primary">
+            Welcome to <br />
+            <em className="font-headline">Your Private Escape</em>
           </h2>
           <div className="mt-6 space-y-6 text-lg text-foreground/80">
             <p>
@@ -24,7 +24,7 @@ export default function About() {
               reconnect with yourself and the profound beauty of nature.
             </p>
           </div>
-        </div>
+        </Animated>
       </div>
     </section>
   );

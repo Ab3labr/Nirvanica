@@ -46,8 +46,9 @@ export default function Contact() {
     <section id="contact" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-            Plan an Unforgettable Experience in Wayanad Today!
+          <h2 className="text-4xl md:text-5xl font-body text-primary">
+            Plan an <br />
+            <em className="font-headline">Unforgettable Experience</em>
           </h2>
           <p className="mt-4 text-lg max-w-2xl mx-auto text-foreground/80">
             Reach out to our team to book your stay or to ask any questions you may have.
@@ -58,8 +59,9 @@ export default function Contact() {
         </div>
         <div id="contact-form" className="max-w-2xl mx-auto">
           <div className="space-y-8 mb-12">
-            <h3 className="text-2xl font-semibold font-headline text-center">
-              Contact Information
+            <h3 className="text-3xl font-body text-center text-primary">
+              Get in <br/>
+              <em className="font-headline">touch with us</em>
             </h3>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 text-center sm:text-left">
                 <div className="flex items-center gap-4">

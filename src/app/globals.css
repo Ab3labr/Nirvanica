@@ -4,6 +4,22 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: 'Bembo Infant Regular';
+    src: url('/fonts/BemboInfantRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Bembo Infant Italic';
+    src: url('/fonts/BemboInfantItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 224 71% 4%;
@@ -14,7 +30,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 71% 4%;
 
-    --primary: 154 25% 30%;
+    --primary: 109 10% 47%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 103 10% 74%;
@@ -31,7 +47,7 @@
 
     --border: 103 10% 68%;
     --input: 103 10% 80%;
-    --ring: 154 25% 30%;
+    --ring: 109 10% 47%;
 
     --radius: 0.5rem;
     
@@ -52,7 +68,7 @@
     --popover: 224 71% 4%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 154 25% 30%;
+    --primary: 109 10% 47%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 103 10% 15%;
@@ -69,7 +85,7 @@
 
     --border: 103 10% 25%;
     --input: 103 10% 25%;
-    --ring: 154 25% 30%;
+    --ring: 109 10% 47%;
   }
 }
 
@@ -92,6 +108,16 @@
   .text-shadow-lg {
     text-shadow: 0 4px 8px rgb(0 0 0 / 0.5);
   }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
 }
 
 @keyframes bounce {
@@ -107,4 +133,48 @@
 
 .animate-bounce {
   animation: bounce 1.5s infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out both;
 }

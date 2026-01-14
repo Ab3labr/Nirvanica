@@ -13,7 +13,7 @@ const navItems = [
   { href: "/#experiences", label: "Experiences" },
   { href: "/#dining", label: "Dining" },
   { href: "/#gallery", label: "Gallery" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/book#contact-us", label: "Contact" },
 ];
 
 const logoDefault = "https://i.ibb.co/cS57kYym/Group-3-removebg-preview.png";
@@ -22,6 +22,12 @@ const logoScrolled = "https://i.ibb.co/HfmzRsFn/nirvanica-logo-2-green-no-bg.png
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,6 +87,7 @@ export default function Header() {
           </div>
 
           <div className="md:hidden">
+            {isClient && (
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className={cn(isScrolled ? "text-foreground" : "text-white hover:text-white/80 hover:bg-white/10")}>
@@ -131,6 +138,7 @@ export default function Header() {
                 </div>
               </SheetContent>
             </Sheet>
+            )}
           </div>
         </div>
       </div>
