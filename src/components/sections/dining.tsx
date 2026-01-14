@@ -1,7 +1,6 @@
 import { Animated } from "@/components/Animated";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ConciergeBell } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,13 +13,12 @@ export default function Dining() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <Animated>
             <div className="space-y-8">
-              <div className="text-center">
-                <ConciergeBell className="h-10 w-10 text-primary mx-auto" />
-                <h2 className="text-4xl md:text-5xl font-body text-primary mt-4">
+              <div className="text-left">
+                <h2 className="text-4xl md:text-5xl font-body text-primary">
                   Dine at <em className="font-headline">Nirvanica</em>
                 </h2>
               </div>
-              <div className="md:text-left text-center">
+              <div className="text-left">
                 <p className="text-lg text-foreground/80">
                   Experience soulful dining, whether you crave a hearty Kerala
                   meal, continental classics, or a candlelight dinner with a view.
